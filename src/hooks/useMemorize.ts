@@ -20,7 +20,8 @@ const useMemorize = () => {
   };
   const saveOrders = (newOrders: MemoOrder) => {
     setOrders(newOrders);
-    localStorage.setItem('orders', JSON.stringify(orders));
+    localStorage.setItem('orders', JSON.stringify(newOrders));
+    return newOrders;
   };
   const resetOrders = () => {
     saveOrders(
