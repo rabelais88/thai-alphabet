@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { ReactSketchCanvas, ReactSketchCanvasRef } from 'react-sketch-canvas';
 import Page from '../components/Page';
 import useLetter from '../hooks/useLetter';
+import useSound from '../hooks/useSound';
 
 const Letter = () => {
   const refCanvas = useRef<ReactSketchCanvasRef>(null);
@@ -17,6 +18,7 @@ const Letter = () => {
     onClear();
     setShowSound(false);
   }, [alphabet]);
+  const { readText } = useSound();
 
   return (
     <Page className="page-letter">
@@ -35,7 +37,16 @@ const Letter = () => {
           </Button>
         )}
         {showSound && (
-          <Text fontSize="30px">/{alphabet['english-sound']}/</Text>
+          <>
+            <Text fontSize="30px">/{alphabet['english-sound']}/</Text>
+            <Button
+              onClick={() => {
+                readText(alphabet.letter);
+              }}
+            >
+              Read Aloud
+            </Button>
+          </>
         )}
         <Text>try copy letter below</Text>
         <Box position="relative">
