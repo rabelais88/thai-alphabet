@@ -1,0 +1,73 @@
+type,letter,example,pronunciation,english-sound,english-meaning
+consonant,ก,ก ไก่,gɔɔ-gài,g,chicken
+consonant,ข,ข ไข่,kɔ̌ɔ-kài,k,egg
+consonant,ฃ,ฃ ขวด,kɔ̌ɔ-kùuat,k,bottle (no longer in use)
+consonant,ค,ค ควาย,kɔɔ-kwaai,k,buffalo
+consonant,ฅ,ฅ คน,kɔɔ-kon,k,person (no longer in use)
+consonant,ฆ,ฆ ระฆัง,kɔɔ-rá-kang,k,bell
+consonant,ง,ง งู,ngɔɔ-nguu,ng,snake
+consonant,จ,จ จาน,jɔɔ-jaan,j,plate
+consonant,ฉ,ฉ ฉิ่ง,chɔ̌ɔ-chìng,ch,cymbals
+consonant,ช,ช ช้าง,chɔɔ-cháang,ch,elephant
+consonant,ซ,ซ โซ่,sɔɔ-sôo,s,chain
+consonant,ฌ,ฌ เฌอ,chɔɔ-chəə,ch,tree
+consonant,ญ,ญ หญิง,yɔɔ-yǐng,y,woman
+consonant,ฎ,ฎ ชฎา,dɔɔ-chá-daa,d,headdress
+consonant,ฏ,ฏ ปฏัก,dtɔɔ-bpà-dtàk,dt,goad
+consonant,ฐ,ฐ ฐาน,tɔ̌ɔ-tǎan,t,pedestal
+consonant,ฑ,ฑ มณโฑ,tɔɔ-mon-too,t,Montho
+consonant,ฒ,ฒ ผู้เฒ่า,tɔɔ-pûu-tâo,t,elder
+consonant,ณ,ณ เณร,nɔɔ-neen,n,novice monk
+consonant,ด,ด เด็ก,dɔɔ-dèk,d,child
+consonant,ต,ต เต่า,dtɔɔ-dtào,dt,turtle
+consonant,ถ,ถ ถุง,tɔ̌ɔ-tǔng,t,sack
+consonant,ท,ท ทหาร,tɔɔ-tá-hǎan,t,soldier
+consonant,ธ,ธ ธง,tɔɔ-tong,t,flag
+consonant,น,น หนู,nɔɔ-nǔu,n,mouse
+consonant,บ,บ ใบไม้,bɔɔ-bai-mái,b,leaf
+consonant,ป,ป ปลา,bpɔɔ-bplaa,bp,fish
+consonant,ผ,ผ ผึ้ง,pɔ̌ɔ-pʉ̂ng,p,bee
+consonant,ฝ,ฝ ฝา,fɔ̌ɔ-fǎa,f,lid
+consonant,พ,พ พาน,pɔɔ-paan,p,tray
+consonant,ฟ,ฟ ฟัน,fɔɔ-fan,f,teeth
+consonant,ภ,ภ สำเภา,pɔɔ-sǎm-pao,p,junk boat
+consonant,ม,ม ม้า,mɔɔ-máa,m,horse
+consonant,ย,ย ยักษ์,yɔɔ-yák,y,giant
+consonant,ร,ร เรือ,rɔɔ-rʉʉa,r,boat
+consonant,ล,ล ลิง,lɔɔ-ling,l,monkey
+consonant,ว,ว แหวน,wɔɔ-wɛ̌ɛn,w,ring
+consonant,ศ,ศ ศาลา,sɔ̌ɔ-sǎa-laa,s,pavilion
+consonant,ษ,ษ ฤๅษี,sɔ̌ɔ-rʉʉ-sǐi,s,hermit
+consonant,ส,ส เสือ,sɔ̌ɔ-sʉ̌ʉa,s,tiger
+consonant,ห,ห หีบ,hɔ̌ɔ-hìip,h,chest
+consonant,ฬ,ฬ จุฬา,lɔɔ-jù-laa,l,kite
+consonant,อ,อ อ่าง,ɔɔ-àang,o,basin
+consonant,ฮ,ฮ นกฮูก,hɔɔ-nók-hûuk,h,owl
+short vowel,อะ,,sara a,a,
+short vowel,อิ,,sara i,i,
+short vowel,อึ,,sara ue,ʉ,
+short vowel,อุ,,sara u,u,
+short vowel,เอะ,,sara e,e,
+short vowel,แอะ,,sara ae,ɛ,
+short vowel,โอะ,,sara o,o,
+short vowel,เอาะ,,sara o,ɔ,
+short vowel,เออะ,,sara oe,ə,
+short vowel,เอียะ,,sara ia,ia,
+short vowel,เอือะ,,sara uea,uea,
+short vowel,อัวะ,,sara ua,ua,
+short vowel,อำ,,sara am,am,
+short vowel,ไอ,,sara ai,ai,
+short vowel,ใอ,,sara ai,ai,
+short vowel,เอา,,sara ao,ao,
+long vowel,อา,,sara a,aa,
+long vowel,อี,,sara i,ii,
+long vowel,อือ,,sara ue,ʉʉ,
+long vowel,อู,,sara u,uu,
+long vowel,เอ,,sara e,ee,
+long vowel,แอ,,sara ae,ɛɛ,
+long vowel,โอ,,sara o,oo,
+long vowel,ออ,,sara o,ɔ,
+long vowel,เออ,,sara oe,əə,
+long vowel,เอีย,,sara ia,iaa,
+long vowel,เอือ,,sara uea,uea,
+long vowel,อัว,,sara ua,uaa,
