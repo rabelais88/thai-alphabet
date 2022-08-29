@@ -12,7 +12,7 @@ const Letter = () => {
     if (!refCanvas.current) return;
     refCanvas.current.clearCanvas();
   };
-  const { alphabet, setResult, remainings } = useLetter();
+  const { alphabet, setResult, remainings, letterMode } = useLetter();
 
   useEffect(() => {
     onClear();
@@ -25,12 +25,16 @@ const Letter = () => {
       <VStack>
         <Text>Total Letters: {remainings}</Text>
         <Text>{alphabet.type}</Text>
-        <Text className="classic-thai-font" fontSize="60px">
-          {alphabet.letter}
-        </Text>
-        <Text className="modern-thai-font" fontSize="60px">
-          {alphabet.letter}
-        </Text>
+        {(letterMode === 'all' || letterMode === 'traditional') && (
+          <Text className="classic-thai-font" fontSize="60px">
+            {alphabet.letter}
+          </Text>
+        )}
+        {(letterMode === 'all' || letterMode === 'modern') && (
+          <Text className="modern-thai-font" fontSize="60px">
+            {alphabet.letter}
+          </Text>
+        )}
         {!showSound && (
           <Button onClick={() => setShowSound(true)}>
             Click here to reveal sound
@@ -60,8 +64,12 @@ const Letter = () => {
             justifyContent="center"
             sx={{ '& > *': { pointerEvents: 'none', fontSize: '120px' } }}
           >
-            <Text className="classic-thai-font">{alphabet.letter}</Text>
-            <Text className="modern-thai-font">{alphabet.letter}</Text>
+            {(letterMode === 'all' || letterMode === 'traditional') && (
+              <Text className="classic-thai-font">{alphabet.letter}</Text>
+            )}
+            {(letterMode === 'all' || letterMode === 'modern') && (
+              <Text className="modern-thai-font">{alphabet.letter}</Text>
+            )}
           </VStack>
           <ReactSketchCanvas
             width="300px"

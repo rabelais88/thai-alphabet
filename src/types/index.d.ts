@@ -8,7 +8,9 @@ declare interface OrderFilters {
   consonantsRare: boolean;
 }
 
+declare type LetterMode = 'traditional' | 'modern' | 'all';
 interface AppContext {
   orders: MemoOrders;
   filters: OrderFilters;
+  letterMode: LetterMode;
 }

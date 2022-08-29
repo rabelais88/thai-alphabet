@@ -1,10 +1,10 @@
 import {
   Button,
-  Checkbox,
   FormControl,
   FormLabel,
   Heading,
   Link,
+  Select,
   Switch,
   SwitchProps,
   Text,
@@ -28,7 +28,14 @@ const LabelledSwitch: React.FC<
 };
 
 const Stats = () => {
-  const { orders, resetOrders, filters, saveFilters } = useMemorize();
+  const {
+    orders,
+    resetOrders,
+    filters,
+    saveFilters,
+    letterMode,
+    setLetterMode,
+  } = useMemorize();
   return (
     <Page className="page-stats">
       <VStack alignItems="flex-start">
@@ -78,7 +85,20 @@ const Stats = () => {
           </LabelledSwitch>
         </VStack>
         <Text>*changing categories will reset stats</Text>
-        <Link href="https://github.com/rabelais88">by Park Sungryeol</Link>
+        <Heading>Fonts</Heading>
+        <Select
+          value={letterMode}
+          onChange={(e) => setLetterMode(e.target.value as LetterMode)}
+        >
+          <option value="all">all fonts</option>
+          <option value="modern">modern font only</option>
+          <option value="traditional">traditional font only</option>
+        </Select>
+        <Link href="https://github.com/rabelais88">
+          by Park Sungryeol
+          <br />
+          while staying in 🏝Chiang Mai, Thailand
+        </Link>
       </VStack>
     </Page>
   );

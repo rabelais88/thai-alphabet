@@ -6,6 +6,7 @@ export const useAppContext = () => {
   const context = useContext(appContext) as AppContext & {
     setOrders: React.Dispatch<React.SetStateAction<MemoOrders>>;
     setFilters: React.Dispatch<React.SetStateAction<OrderFilters>>;
+    setLetterMode: React.Dispatch<React.SetStateAction<LetterMode>>;
   };
   return context;
 };

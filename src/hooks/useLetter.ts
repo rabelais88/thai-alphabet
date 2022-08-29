@@ -6,7 +6,7 @@ const useLetter = () => {
   const { letter } = useParams();
   const letterIndex = Number(letter);
   const alphabet = alphabets[letterIndex];
-  const { orders, saveOrders, tryNewLetter } = useMemorize();
+  const { orders, saveOrders, tryNewLetter, letterMode } = useMemorize();
   const setResult = (remembered: boolean) => {
     const q = orders.shift();
     if (!remembered) {
@@ -16,7 +16,7 @@ const useLetter = () => {
     tryNewLetter();
   };
   const remainings = orders.length;
-  return { alphabet, setResult, remainings };
+  return { alphabet, setResult, remainings, letterMode };
 };
 
 export default useLetter;

@@ -5,7 +5,8 @@ import { useAppContext } from './appContext';
 
 const useMemorize = () => {
   const navigate = useNavigate();
-  const { filters, setFilters, orders, setOrders } = useAppContext();
+  const { filters, setFilters, orders, setOrders, letterMode, setLetterMode } =
+    useAppContext();
   const saveFilters = (orderFilters: Partial<OrderFilters>) => {
     const _filters = { ...filters, ...orderFilters };
     setFilters(_filters);
@@ -67,6 +68,8 @@ const useMemorize = () => {
     resetOrders,
     saveFilters,
     filters,
+    letterMode,
+    setLetterMode,
   };
 };
 
