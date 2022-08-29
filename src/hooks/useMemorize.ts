@@ -1,31 +1,15 @@
 import { useNavigate } from 'react-router-dom';
 import alphabets from '../constants/alphabets';
 import _shuffle from 'lodash/shuffle';
-import { useState } from 'react';
-type MemoOrder = number[]; // letter index as number
-
-interface OrderFilters {
-  longVowels: boolean;
-  shortVowels: boolean;
-  consonantsHigh: boolean;
-  consonantsLow: boolean;
-  consonantsRare: boolean;
-}
+import { useAppContext } from './appContext';
 
 const useMemorize = () => {
-  const [orders, setOrders] = useState<MemoOrder>(
-    JSON.parse(localStorage.getItem('orders') ?? '[]')
-  );
-  const [filters, setFilters] = useState<OrderFilters>(
-    JSON.parse(localStorage.getItem('filters') ?? '{}')
-  );
   const navigate = useNavigate();
+  const { filters, setFilters, orders, setOrders } = useAppContext();
   const saveFilters = (orderFilters: Partial<OrderFilters>) => {
     const _filters = { ...filters, ...orderFilters };
-    localStorage.setItem('filters', JSON.stringify(_filters));
     setFilters(_filters);
     const newOrders = resetOrders(_filters);
-    console.log(_filters);
     saveOrders(newOrders);
     return { filters: _filters, newOrders };
   };
@@ -38,9 +22,8 @@ const useMemorize = () => {
     navigate('/stats');
     window.scrollTo(0, 0);
   };
-  const saveOrders = (newOrders: MemoOrder) => {
+  const saveOrders = (newOrders: MemoOrders) => {
     setOrders(newOrders);
-    localStorage.setItem('orders', JSON.stringify(newOrders));
     return newOrders;
   };
   const resetOrders = (_filters?: Partial<OrderFilters>) => {
@@ -66,6 +49,11 @@ const useMemorize = () => {
     let nextIndex = orders[0];
     if (orders.length === 0) {
       nextIndex = resetOrders()[0];
+    }
+    if (nextIndex === undefined || orders.length === 0) {
+      navigate('/no-letter');
+      window.scrollTo(0, 0);
+      return;
     }
     navigate(`/letter/${nextIndex}`);
     window.scrollTo(0, 0);

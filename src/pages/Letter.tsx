@@ -1,7 +1,6 @@
 import { Box, Button, Text, VStack } from '@chakra-ui/react';
 import { useEffect, useRef, useState } from 'react';
 import { ReactSketchCanvas, ReactSketchCanvasRef } from 'react-sketch-canvas';
-import useMemorize from '../hooks/useMemorize';
 import Page from '../components/Page';
 import useLetter from '../hooks/useLetter';
 
@@ -48,13 +47,10 @@ const Letter = () => {
             width="100%"
             height="100%"
             justifyContent="center"
+            sx={{ '& > *': { pointerEvents: 'none', fontSize: '120px' } }}
           >
-            <Text fontSize="120px" className="classic-thai-font">
-              {alphabet.letter}
-            </Text>
-            <Text fontSize="120px" className="modern-thai-font">
-              {alphabet.letter}
-            </Text>
+            <Text className="classic-thai-font">{alphabet.letter}</Text>
+            <Text className="modern-thai-font">{alphabet.letter}</Text>
           </VStack>
           <ReactSketchCanvas
             width="300px"
