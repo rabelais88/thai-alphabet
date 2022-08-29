@@ -16,7 +16,8 @@ const useLetter = () => {
     saveOrders(orders);
     tryNewLetter();
   };
-  return { alphabet, setResult };
+  const remainings = orders.length;
+  return { alphabet, setResult, remainings };
 };
 
 export default useLetter;

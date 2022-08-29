@@ -12,7 +12,7 @@ const Letter = () => {
     if (!refCanvas.current) return;
     refCanvas.current.clearCanvas();
   };
-  const { alphabet, setResult } = useLetter();
+  const { alphabet, setResult, remainings } = useLetter();
 
   useEffect(() => {
     onClear();
@@ -22,6 +22,7 @@ const Letter = () => {
   return (
     <Page className="page-letter">
       <VStack>
+        <Text>Total Letters: {remainings}</Text>
         <Text>{alphabet.type}</Text>
         <Text className="classic-thai-font" fontSize="60px">
           {alphabet.letter}

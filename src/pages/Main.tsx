@@ -11,8 +11,10 @@ import {
 } from '@chakra-ui/react';
 import Page from '../components/Page';
 import alphabets from '../constants/alphabets';
+import useMemorize from '../hooks/useMemorize';
 
 const Main = () => {
+  const { orders } = useMemorize();
   return (
     <Page className="page-main">
       <VStack>
@@ -25,6 +27,7 @@ const Main = () => {
                 <Th>letter</Th>
                 <Th>modern letter</Th>
                 <Th>sound</Th>
+                <Th>memorizing</Th>
               </Tr>
             </Thead>
             <Tbody>
@@ -38,6 +41,7 @@ const Main = () => {
                     {alphabet.letter}
                   </Td>
                   <Td>{alphabet['english-sound']}</Td>
+                  <Td>{orders.includes(i) ? '✅' : '❌'}</Td>
                 </Tr>
               ))}
             </Tbody>

@@ -1,73 +1,73 @@
-type,letter,example,pronunciation,english-sound,english-meaning
-consonant,ก,ก ไก่,gɔɔ-gài,g,chicken
-consonant,ข,ข ไข่,kɔ̌ɔ-kài,k,egg
-consonant,ฃ,ฃ ขวด,kɔ̌ɔ-kùuat,k,bottle (no longer in use)
-consonant,ค,ค ควาย,kɔɔ-kwaai,k,buffalo
-consonant,ฅ,ฅ คน,kɔɔ-kon,k,person (no longer in use)
-consonant,ฆ,ฆ ระฆัง,kɔɔ-rá-kang,k,bell
-consonant,ง,ง งู,ngɔɔ-nguu,ng,snake
-consonant,จ,จ จาน,jɔɔ-jaan,j,plate
-consonant,ฉ,ฉ ฉิ่ง,chɔ̌ɔ-chìng,ch,cymbals
-consonant,ช,ช ช้าง,chɔɔ-cháang,ch,elephant
-consonant,ซ,ซ โซ่,sɔɔ-sôo,s,chain
-consonant,ฌ,ฌ เฌอ,chɔɔ-chəə,ch,tree
-consonant,ญ,ญ หญิง,yɔɔ-yǐng,y,woman
-consonant,ฎ,ฎ ชฎา,dɔɔ-chá-daa,d,headdress
-consonant,ฏ,ฏ ปฏัก,dtɔɔ-bpà-dtàk,dt,goad
-consonant,ฐ,ฐ ฐาน,tɔ̌ɔ-tǎan,t,pedestal
-consonant,ฑ,ฑ มณโฑ,tɔɔ-mon-too,t,Montho
-consonant,ฒ,ฒ ผู้เฒ่า,tɔɔ-pûu-tâo,t,elder
-consonant,ณ,ณ เณร,nɔɔ-neen,n,novice monk
-consonant,ด,ด เด็ก,dɔɔ-dèk,d,child
-consonant,ต,ต เต่า,dtɔɔ-dtào,dt,turtle
-consonant,ถ,ถ ถุง,tɔ̌ɔ-tǔng,t,sack
-consonant,ท,ท ทหาร,tɔɔ-tá-hǎan,t,soldier
-consonant,ธ,ธ ธง,tɔɔ-tong,t,flag
-consonant,น,น หนู,nɔɔ-nǔu,n,mouse
-consonant,บ,บ ใบไม้,bɔɔ-bai-mái,b,leaf
-consonant,ป,ป ปลา,bpɔɔ-bplaa,bp,fish
-consonant,ผ,ผ ผึ้ง,pɔ̌ɔ-pʉ̂ng,p,bee
-consonant,ฝ,ฝ ฝา,fɔ̌ɔ-fǎa,f,lid
-consonant,พ,พ พาน,pɔɔ-paan,p,tray
-consonant,ฟ,ฟ ฟัน,fɔɔ-fan,f,teeth
-consonant,ภ,ภ สำเภา,pɔɔ-sǎm-pao,p,junk boat
-consonant,ม,ม ม้า,mɔɔ-máa,m,horse
-consonant,ย,ย ยักษ์,yɔɔ-yák,y,giant
-consonant,ร,ร เรือ,rɔɔ-rʉʉa,r,boat
-consonant,ล,ล ลิง,lɔɔ-ling,l,monkey
-consonant,ว,ว แหวน,wɔɔ-wɛ̌ɛn,w,ring
-consonant,ศ,ศ ศาลา,sɔ̌ɔ-sǎa-laa,s,pavilion
-consonant,ษ,ษ ฤๅษี,sɔ̌ɔ-rʉʉ-sǐi,s,hermit
-consonant,ส,ส เสือ,sɔ̌ɔ-sʉ̌ʉa,s,tiger
-consonant,ห,ห หีบ,hɔ̌ɔ-hìip,h,chest
-consonant,ฬ,ฬ จุฬา,lɔɔ-jù-laa,l,kite
-consonant,อ,อ อ่าง,ɔɔ-àang,o,basin
-consonant,ฮ,ฮ นกฮูก,hɔɔ-nók-hûuk,h,owl
-short vowel,อะ,,sara a,a,
-short vowel,อิ,,sara i,i,
-short vowel,อึ,,sara ue,ʉ,
-short vowel,อุ,,sara u,u,
-short vowel,เอะ,,sara e,e,
-short vowel,แอะ,,sara ae,ɛ,
-short vowel,โอะ,,sara o,o,
-short vowel,เอาะ,,sara o,ɔ,
-short vowel,เออะ,,sara oe,ə,
-short vowel,เอียะ,,sara ia,ia,
-short vowel,เอือะ,,sara uea,uea,
-short vowel,อัวะ,,sara ua,ua,
-short vowel,อำ,,sara am,am,
-short vowel,ไอ,,sara ai,ai,
-short vowel,ใอ,,sara ai,ai,
-short vowel,เอา,,sara ao,ao,
-long vowel,อา,,sara a,aa,
-long vowel,อี,,sara i,ii,
-long vowel,อือ,,sara ue,ʉʉ,
-long vowel,อู,,sara u,uu,
-long vowel,เอ,,sara e,ee,
-long vowel,แอ,,sara ae,ɛɛ,
-long vowel,โอ,,sara o,oo,
-long vowel,ออ,,sara o,ɔ,
-long vowel,เออ,,sara oe,əə,
-long vowel,เอีย,,sara ia,iaa,
-long vowel,เอือ,,sara uea,uea,
-long vowel,อัว,,sara ua,uaa,
+index,type,letter,example,pronunciation,english-sound,english-meaning,occurrence-percentage
+0,consonant,ก,ก ไก่,gɔɔ-gài,g,chicken,31.08
+1,consonant,ข,ข ไข่,kɔ̌ɔ-kài,k,egg,8.14
+2,consonant,ฃ,ฃ ขวด,kɔ̌ɔ-kùuat,k,bottle (no longer in use),0
+3,consonant,ค,ค ควาย,kɔɔ-kwaai,k,buffalo,14.95
+4,consonant,ฅ,ฅ คน,kɔɔ-kon,k,person (no longer in use),0
+5,consonant,ฆ,ฆ ระฆัง,kɔɔ-rá-kang,k,bell,0.36
+6,consonant,ง,ง งู,ngɔɔ-nguu,ng,snake,27.08
+7,consonant,จ,จ จาน,jɔɔ-jaan,j,plate,9.33
+8,consonant,ฉ,ฉ ฉิ่ง,chɔ̌ɔ-chìng,ch,cymbals,1.28
+9,consonant,ช,ช ช้าง,chɔɔ-cháang,ch,elephant,7.98
+10,consonant,ซ,ซ โซ่,sɔɔ-sôo,s,chain,2.04
+11,consonant,ฌ,ฌ เฌอ,chɔɔ-chəə,ch,tree,0.05
+12,consonant,ญ,ญ หญิง,yɔɔ-yǐng,y,woman,2.46
+13,consonant,ฎ,ฎ ชฎา,dɔɔ-chá-daa,d,headdress,0.38
+14,consonant,ฏ,ฏ ปฏัก,dtɔɔ-bpà-dtàk,dt,goad,0.4
+15,consonant,ฐ,ฐ ฐาน,tɔ̌ɔ-tǎan,t,pedestal,0.74
+16,consonant,ฑ,ฑ มณโฑ,tɔɔ-mon-too,t,Montho,0.55
+17,consonant,ฒ,ฒ ผู้เฒ่า,tɔɔ-pûu-tâo,t,elder,0.2
+18,consonant,ณ,ณ เณร,nɔɔ-neen,n,novice monk,3.15
+19,consonant,ด,ด เด็ก,dɔɔ-dèk,d,child,17.42
+20,consonant,ต,ต เต่า,dtɔɔ-dtào,dt,turtle,16.87
+21,consonant,ถ,ถ ถุง,tɔ̌ɔ-tǔng,t,sack,3.71
+22,consonant,ท,ท ทหาร,tɔɔ-tá-hǎan,t,soldier,12.93
+23,consonant,ธ,ธ ธง,tɔɔ-tong,t,flag,3.11
+24,consonant,น,น หนู,nɔɔ-nǔu,n,mouse,35.47
+25,consonant,บ,บ ใบไม้,bɔɔ-bai-mái,b,leaf,13.61
+26,consonant,ป,ป ปลา,bpɔɔ-bplaa,bp,fish,11.8
+27,consonant,ผ,ผ ผึ้ง,pɔ̌ɔ-pʉ̂ng,p,bee,4.11
+28,consonant,ฝ,ฝ ฝา,fɔ̌ɔ-fǎa,f,lid,1.13
+29,consonant,พ,พ พาน,pɔɔ-paan,p,tray,10.19
+30,consonant,ฟ,ฟ ฟัน,fɔɔ-fan,f,teeth,1.91
+31,consonant,ภ,ภ สำเภา,pɔɔ-sǎm-pao,p,junk boat,2.97
+32,consonant,ม,ม ม้า,mɔɔ-máa,m,horse,24.85
+33,consonant,ย,ย ยักษ์,yɔɔ-yák,y,giant,21.87
+34,consonant,ร,ร เรือ,rɔɔ-rʉʉa,r,boat,34.79
+35,consonant,ล,ล ลิง,lɔɔ-ling,l,monkey,18.76
+36,consonant,ว,ว แหวน,wɔɔ-wɛ̌ɛn,w,ring,21.03
+37,consonant,ศ,ศ ศาลา,sɔ̌ɔ-sǎa-laa,s,pavilion,4.26
+38,consonant,ษ,ษ ฤๅษี,sɔ̌ɔ-rʉʉ-sǐi,s,hermit,2.74
+39,consonant,ส,ส เสือ,sɔ̌ɔ-sʉ̌ʉa,s,tiger,16.79
+40,consonant,ห,ห หีบ,hɔ̌ɔ-hìip,h,chest,14.9
+41,consonant,ฬ,ฬ จุฬา,lɔɔ-jù-laa,l,kite,0.16
+42,consonant,อ,อ อ่าง,ɔɔ-àang,o,basin,28.01
+43,consonant,ฮ,ฮ นกฮูก,hɔɔ-nók-hûuk,h,owl,0.49
+44,short vowel,อะ,,sara a,a,,
+45,short vowel,อิ,,sara i,i,,
+46,short vowel,อึ,,sara ue,ʉ,,
+47,short vowel,อุ,,sara u,u,,
+48,short vowel,เอะ,,sara e,e,,
+49,short vowel,แอะ,,sara ae,ɛ,,
+50,short vowel,โอะ,,sara o,o,,
+51,short vowel,เอาะ,,sara o,ɔ,,
+52,short vowel,เออะ,,sara oe,ə,,
+53,short vowel,เอียะ,,sara ia,ia,,
+54,short vowel,เอือะ,,sara uea,uea,,
+55,short vowel,อัวะ,,sara ua,ua,,
+56,short vowel,อำ,,sara am,am,,
+57,short vowel,ไอ,,sara ai,ai,,
+58,short vowel,ใอ,,sara ai,ai,,
+59,short vowel,เอา,,sara ao,ao,,
+60,long vowel,อา,,sara a,aa,,
+61,long vowel,อี,,sara i,ii,,
+62,long vowel,อือ,,sara ue,ʉʉ,,
+63,long vowel,อู,,sara u,uu,,
+64,long vowel,เอ,,sara e,ee,,
+65,long vowel,แอ,,sara ae,ɛɛ,,
+66,long vowel,โอ,,sara o,oo,,
+67,long vowel,ออ,,sara o,ɔ,,
+68,long vowel,เออ,,sara oe,əə,,
+69,long vowel,เอีย,,sara ia,iaa,,
+70,long vowel,เอือ,,sara uea,uea,,
+71,long vowel,อัว,,sara ua,uaa,,

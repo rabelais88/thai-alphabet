@@ -29,7 +29,7 @@ const TopBar = () => {
         <MenuList>
           <MenuItem onClick={showList}>All Letters</MenuItem>
           <MenuItem onClick={tryNewLetter}>Try Memorize Letters</MenuItem>
-          <MenuItem onClick={showStats}>Show Stats</MenuItem>
+          <MenuItem onClick={showStats}>Stats & Options</MenuItem>
         </MenuList>
       </Menu>
       <Box flex="1" textAlign="center">
