@@ -1,36 +1,44 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@chakra-ui/icons': ^2.0.9
   '@chakra-ui/react': ^2.2.9
   '@emotion/react': ^11.10.0
   '@emotion/styled': ^11.10.0
   '@types/d3': ^7.4.0
+  '@types/lodash': ^4.14.184
   '@types/react': ^18.0.17
   '@types/react-dom': ^18.0.6
   '@vitejs/plugin-react': ^2.0.1
   d3: ^7.6.1
   framer-motion: ^7.2.1
+  lodash: ^4.17.21
   prettier: ^2.7.1
   react: ^18.2.0
   react-dom: ^18.2.0
   react-router-dom: '6'
   react-sketch-canvas: ^6.2.0
+  supermemo: ^2.0.17
   typescript: ^4.6.4
   vite: ^3.0.7
 
 dependencies:
+  '@chakra-ui/icons': 2.0.9_react@18.2.0
   '@chakra-ui/react': 2.2.9_t6dokxdkuiipickxg2ynuk4qpu
   '@emotion/react': 11.10.0_ug65io7jkbhmo4fihdmbrh3ina
   '@emotion/styled': 11.10.0_lzabd6uj4wst47copsenr4b56q
   d3: 7.6.1
   framer-motion: 7.2.1_biqbaboplfbrettd7655fr4n2y
+  lodash: 4.17.21
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-router-dom: 6.3.0_biqbaboplfbrettd7655fr4n2y
   react-sketch-canvas: 6.2.0_react@18.2.0
+  supermemo: 2.0.17
 
 devDependencies:
   '@types/d3': 7.4.0
+  '@types/lodash': 4.14.184
   '@types/react': 18.0.17
   '@types/react-dom': 18.0.6
   '@vitejs/plugin-react': 2.0.1_vite@3.0.9
@@ -556,6 +564,26 @@ packages:
     dependencies:
       '@chakra-ui/shared-utils': 2.0.1
       '@chakra-ui/system': 2.2.7_rq3l25qc4qpq3j4w6o4x7hatzy
+      react: 18.2.0
+    dev: false
+
+  /@chakra-ui/icon/3.0.9_react@18.2.0:
+    resolution: {integrity: sha512-P2Pwm/za6m1W1oqL2kGHH6XrrymsBjqYAFwOW2lB5Q6mI1e+RYe/iMxDoPSLHMYhqdfH7vyib/ffE3Vv3a5oTA==}
+    peerDependencies:
+      '@chakra-ui/system': '>=2.0.0'
+      react: '>=18'
+    dependencies:
+      '@chakra-ui/shared-utils': 2.0.1
+      react: 18.2.0
+    dev: false
+
+  /@chakra-ui/icons/2.0.9_react@18.2.0:
+    resolution: {integrity: sha512-6xvV2rC8wATgfnRH+fC9mi0nLcgKjhHKO29lV1pGioVI0yWK0dqc//zjcyBhMMpW5ABnSfig7ujVBf3op/Syzg==}
+    peerDependencies:
+      '@chakra-ui/system': '>=2.0.0'
+      react: '>=18'
+    dependencies:
+      '@chakra-ui/icon': 3.0.9_react@18.2.0
       react: 18.2.0
     dev: false
 
@@ -1724,7 +1752,6 @@ packages:
 
   /@types/lodash/4.14.184:
     resolution: {integrity: sha512-RoZphVtHbxPZizt4IcILciSWiC6dcn+eZ8oX9IWEYfDMcocdd42f7NPI6fQj+6zI8y4E0L7gu2pcZKLGTRaV9Q==}
-    dev: false
 
   /@types/parse-json/4.0.0:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
@@ -2539,6 +2566,10 @@ packages:
     resolution: {integrity: sha512-GK3g5RPZWTRSeLSpgP8Xhra+pnjBC56q9FZYe1d5RN3TJ35dbkGy3YqBSMbyCrlbi+CM9Z3Jk5yTL7RCsqboyQ==}
     dev: false
 
+  /lodash/4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+    dev: false
+
   /loose-envify/1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
     hasBin: true
@@ -2847,6 +2878,11 @@ packages:
 
   /stylis/4.0.13:
     resolution: {integrity: sha512-xGPXiFVl4YED9Jh7Euv2V220mriG9u4B2TA6Ybjc1catrstKD2PpIdU3U0RKpkVBC2EhmL/F0sPCr9vrFTNRag==}
+    dev: false
+
+  /supermemo/2.0.17:
+    resolution: {integrity: sha512-c/BMAkG+IDYtAP1AR97DVU4x4gs8vfvLA4ejND7lHKdzjaAWwxixtcZjnQNfcyAKfZn2ovIYKJAGpTG45dr8ug==}
+    engines: {node: '>=10'}
     dev: false
 
   /supports-color/5.5.0:

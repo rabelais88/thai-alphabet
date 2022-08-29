@@ -1,24 +1,26 @@
-import { Box, Button, Container, Text, VStack } from '@chakra-ui/react';
-import { useEffect, useRef } from 'react';
-import { useParams } from 'react-router-dom';
-import alphabets from '../constants/alphabets';
+import { Box, Button, Text, VStack } from '@chakra-ui/react';
+import { useEffect, useRef, useState } from 'react';
 import { ReactSketchCanvas, ReactSketchCanvasRef } from 'react-sketch-canvas';
 import useMemorize from '../hooks/useMemorize';
+import Page from '../components/Page';
+import useLetter from '../hooks/useLetter';
 
 const Letter = () => {
-  const { letter } = useParams();
-  const alphabet = alphabets[Number(letter)];
   const refCanvas = useRef<ReactSketchCanvasRef>(null);
+  const [showSound, setShowSound] = useState(false);
   const onClear = () => {
     if (!refCanvas.current) return;
     refCanvas.current.clearCanvas();
   };
+  const { alphabet, setResult } = useLetter();
 
-  useEffect(() => {}, []);
-  const onNext = useMemorize();
+  useEffect(() => {
+    onClear();
+    setShowSound(false);
+  }, [alphabet]);
 
   return (
-    <Container className="page-letter">
+    <Page className="page-letter">
       <VStack>
         <Text>{alphabet.type}</Text>
         <Text className="classic-thai-font" fontSize="60px">
@@ -27,7 +29,14 @@ const Letter = () => {
         <Text className="modern-thai-font" fontSize="60px">
           {alphabet.letter}
         </Text>
-        <Text fontSize="30px">/{alphabet['english-sound']}/</Text>
+        {!showSound && (
+          <Button onClick={() => setShowSound(true)}>
+            Click here to reveal sound
+          </Button>
+        )}
+        {showSound && (
+          <Text fontSize="30px">/{alphabet['english-sound']}/</Text>
+        )}
         <Text>try copy letter below</Text>
         <Box position="relative">
           <VStack
@@ -39,16 +48,16 @@ const Letter = () => {
             height="100%"
             justifyContent="center"
           >
-            <Text fontSize="80px" className="modern-thai-font">
+            <Text fontSize="120px" className="classic-thai-font">
               {alphabet.letter}
             </Text>
-            <Text fontSize="80px" className="classic-thai-font">
+            <Text fontSize="120px" className="modern-thai-font">
               {alphabet.letter}
             </Text>
           </VStack>
           <ReactSketchCanvas
             width="300px"
-            height="300px"
+            height="400px"
             strokeWidth={4}
             strokeColor="black"
             ref={refCanvas}
@@ -58,9 +67,12 @@ const Letter = () => {
         <Button onClick={onClear} variant="outline">
           clear
         </Button>
-        <Button onClick={onNext}>next letter</Button>
+        <Button onClick={() => setResult(true)}>I remeber this word!</Button>
+        <Button onClick={() => setResult(false)}>
+          Don't know. ask it again
+        </Button>
       </VStack>
-    </Container>
+    </Page>
   );
 };
 
