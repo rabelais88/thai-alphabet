@@ -12,6 +12,7 @@ const useLetter = () => {
     if (!remembered) {
       if (q) orders.push(q);
     }
+    console.log(orders);
     saveOrders(orders);
     tryNewLetter();
   };

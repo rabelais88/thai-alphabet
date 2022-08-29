@@ -24,13 +24,18 @@ const useMemorize = () => {
     return newOrders;
   };
   const resetOrders = () => {
-    saveOrders(
-      _shuffle(Array.from({ length: alphabets.length }).map((_, i) => i))
+    const newOrders = _shuffle(
+      Array.from({ length: alphabets.length }).map((_, i) => i)
     );
+    saveOrders(newOrders);
+    return newOrders;
   };
   const tryNewLetter = () => {
-    if (orders.length === 0) resetOrders();
-    navigate(`/letter/${orders[0]}`);
+    let nextIndex = orders[0];
+    if (orders.length === 0) {
+      nextIndex = resetOrders()[0];
+    }
+    navigate(`/letter/${nextIndex}`);
     window.scrollTo(0, 0);
   };
   return {
