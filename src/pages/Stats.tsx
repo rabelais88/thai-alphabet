@@ -2,6 +2,7 @@ import {
   Button,
   Checkbox,
   Heading,
+  Link,
   Switch,
   Text,
   VStack,
@@ -51,6 +52,7 @@ const Stats = () => {
           </Switch>
         </VStack>
         <Text>*changing categories will reset stats</Text>
+        <Link href="https://github.com/rabelais88">by Park Sungryeol</Link>
       </VStack>
     </Page>
   );
