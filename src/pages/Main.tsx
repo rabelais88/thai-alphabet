@@ -25,7 +25,10 @@ const Main = () => {
               <Tr>
                 <Th>type</Th>
                 <Th>letter</Th>
-                <Th>modern letter</Th>
+                <Th>
+                  modern
+                  <br /> letter
+                </Th>
                 <Th>sound</Th>
                 <Th>memorizing</Th>
               </Tr>

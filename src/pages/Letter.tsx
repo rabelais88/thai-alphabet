@@ -62,7 +62,17 @@ const Letter = () => {
             width="100%"
             height="100%"
             justifyContent="center"
-            sx={{ '& > *': { pointerEvents: 'none', fontSize: '120px' } }}
+            sx={{
+              '& > *': {
+                pointerEvents: 'none',
+                fontSize: '120px',
+                touchAction: 'none',
+                MozUserFocus: 'none',
+                userSelect: 'none',
+                WebkitUserSelect: 'none',
+                WebkitUserModify: 'none',
+              },
+            }}
           >
             {(letterMode === 'all' || letterMode === 'traditional') && (
               <Text className="classic-thai-font">{alphabet.letter}</Text>
