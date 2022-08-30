@@ -11,7 +11,8 @@ import {
 import useMemorize from '../hooks/useMemorize';
 
 const TopBar = () => {
-  const { showList, tryNewLetter, showStats } = useMemorize();
+  const { showList, tryNewLetter, showStats, tryConfusingLetters } =
+    useMemorize();
   return (
     <Box
       className="top-bar"
@@ -29,6 +30,9 @@ const TopBar = () => {
         <MenuList>
           <MenuItem onClick={showList}>All Letters</MenuItem>
           <MenuItem onClick={tryNewLetter}>Try Memorize Letters</MenuItem>
+          <MenuItem onClick={tryConfusingLetters}>
+            Check Confusing Letters
+          </MenuItem>
           <MenuItem onClick={showStats}>Stats & Options</MenuItem>
         </MenuList>
       </Menu>

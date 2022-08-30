@@ -15,6 +15,10 @@ const useMemorize = () => {
     return { filters: _filters, newOrders };
   };
 
+  const tryConfusingLetters = () => {
+    navigate('/letters-confusing');
+    window.scrollTo(0, 0);
+  };
   const showList = () => {
     navigate('/');
     window.scrollTo(0, 0);
@@ -70,6 +74,7 @@ const useMemorize = () => {
     filters,
     letterMode,
     setLetterMode,
+    tryConfusingLetters,
   };
 };
 

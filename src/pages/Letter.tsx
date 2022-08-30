@@ -93,7 +93,7 @@ const Letter = () => {
         <Button onClick={onClear} variant="outline">
           clear
         </Button>
-        <Button onClick={() => setResult(true)}>✅I remeber this word!</Button>
+        <Button onClick={() => setResult(true)}>✅I remeber this!</Button>
         <Button onClick={() => setResult(false)}>
           ❌ I don't know. ask it again
         </Button>
